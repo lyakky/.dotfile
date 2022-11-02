@@ -52,5 +52,14 @@ require("packer").startup({
     -- c/c++
     use 'jackguo380/vim-lsp-cxx-highlight' -- 为 c/cpp 提供基于 lsp 的高亮
     use 'skywind3000/vim-cppman' -- http://cplusplus.com/ 和 http://cppreference.com/ 获取文档
+
+
+    -- nvim-lspconfig
+    use 'neovim/nvim-lspconfig' 
+    --use 'williamboman/nvim-lsp-installer'
+    use 'williamboman/mason-lspconfig.nvim'
+    use 'mfussenegger/nvim-dap'
+    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'williamboman/mason.nvim'
   end,
 })
