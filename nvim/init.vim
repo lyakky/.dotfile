@@ -4,7 +4,6 @@ lua require('plugins')
 lua require("plugin-config/nvim-tree")
 lua require('plugin-config/bufferline')
 lua require('plugin-config/coderunner')
-lua require('plugin-config/mason')
-lua require('lspconfig').pyright.setup{}
+lua require('lsp/setup')
 set background=dark
 colorscheme tokyonight
