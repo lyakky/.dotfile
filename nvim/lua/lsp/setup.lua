@@ -7,7 +7,7 @@ require("mason").setup({
     }
   }
 })
-local SERVERS = { "sumneko_lua", "rust_analyzer", "clangd"}
+local SERVERS = { "sumneko_lua", "rust_analyzer", "clangd", "asm_lsp"}
 
 
 require("mason-lspconfig").setup({
