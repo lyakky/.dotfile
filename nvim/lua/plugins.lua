@@ -55,7 +55,7 @@ require("packer").startup({
 
 
     -- nvim-lspconfig
-    use 'neovim/nvim-lspconfig' 
+    use 'neovim/nvim-lspconfig'
     --use 'williamboman/nvim-lsp-installer'
     use 'williamboman/mason-lspconfig.nvim'
     use 'mfussenegger/nvim-dap'
@@ -66,5 +66,11 @@ require("packer").startup({
     use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use "b0o/schemastore.nvim" --json schema
+    --nvim-treesitter
+    use 'tree-sitter/tree-sitter'
+    use 'nvim-treesitter/nvim-treesitter'
+    --telescope
+    use 'nvim-telescope/telescope.nvim'
   end,
 })

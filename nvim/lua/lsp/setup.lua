@@ -7,7 +7,7 @@ require("mason").setup({
     }
   }
 })
-local SERVERS = { "sumneko_lua", "rust_analyzer", "clangd", "asm_lsp"}
+local SERVERS = { "sumneko_lua", "rust_analyzer", "clangd", "asm_lsp", "jsonls"}
 
 
 require("mason-lspconfig").setup({
@@ -96,6 +96,14 @@ lspconfig.sumneko_lua.setup {
   capabilities = capabilities
 }
 
+require('lspconfig').jsonls.setup {
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas(),
+      validate = { enable = true },
+    },
+  },
+}
 
 -- luasnip setup
 local luasnip = require 'luasnip'

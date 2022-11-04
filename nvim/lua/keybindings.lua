@@ -1,10 +1,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-local map =vim.api.nvim_set_keymap
-local opt ={noremap = true, silent = true}
+local map = vim.api.nvim_set_keymap
+local opt = { noremap = true, silent = true }
 
-map("n","<C-u", "9k", opt)
+map("n", "<C-u", "9k", opt)
 map("n", "C-d", "9j", opt)
 
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
@@ -18,8 +18,8 @@ map("n", "sh", ":sp<CR>", opt)
 map("n", "sc", "<C-w>c", opt)
 map("n", "so", "<C-w>o", opt)
 --比例控制
-map("n", "s>",":vertical resize +20<CR>", opt)
-map("n", "s<",":vertical resize -20<CR>", opt)
+map("n", "s>", ":vertical resize +20<CR>", opt)
+map("n", "s<", ":vertical resize -20<CR>", opt)
 map("n", "s=", "<C-w>=", opt)
 map("n", "sj", ":resize -10<CR>", opt)
 map("n", "sk", ":resize +10<CR>", opt)
@@ -36,6 +36,13 @@ map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 --code run
 map("n", "<leader>r", ":wall<CR>:RunCode<CR>", opt)
 map("n", "<leader>rc", ":RunClose<CR>", opt)
+
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 local pluginKeys = {}
 
