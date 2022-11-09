@@ -221,6 +221,11 @@ _G.packer_plugins = {
     path = "/home/akky/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["tree-sitter"] = {
+    loaded = true,
+    path = "/home/akky/.local/share/nvim/site/pack/packer/start/tree-sitter",
+    url = "https://github.com/tree-sitter/tree-sitter"
+  },
   undotree = {
     loaded = true,
     path = "/home/akky/.local/share/nvim/site/pack/packer/start/undotree",

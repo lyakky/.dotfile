@@ -8,4 +8,4 @@ service privoxy status &> /dev/null
 if [ $? -ne 0 ];then
 	service privoxy restart
 fi
-
+export DISPLAY=${RESOLVCONF_IP}:0
