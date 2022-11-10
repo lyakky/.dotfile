@@ -7,7 +7,7 @@ lua require('plugin-config/coderunner')
 lua require('lsp/setup')
 set background=dark
 colorscheme tokyonight
-
+"highlight Normal guibg=None ctermbg=None
 
 "*#查找可视模式选中的文本
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>

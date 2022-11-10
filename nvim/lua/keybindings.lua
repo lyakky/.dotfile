@@ -6,7 +6,6 @@ local opt = { noremap = true, silent = true }
 
 map("n", "<C-u", "9k", opt)
 map("n", "C-d", "9j", opt)
-
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 
@@ -43,6 +42,8 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+
 
 local pluginKeys = {}
 

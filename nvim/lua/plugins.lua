@@ -58,7 +58,7 @@ require("packer").startup({
     use 'neovim/nvim-lspconfig'
     --use 'williamboman/nvim-lsp-installer'
     use 'williamboman/mason-lspconfig.nvim'
-    use 'mfussenegger/nvim-dap'
+    use 'mfussenegger/nvim-dap' --debug
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'williamboman/mason.nvim'
     --autocompletion

@@ -1,6 +1,7 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "utf-8"
+vim.o.fileencodings = "utf-8,gb2312,gbk"
 -- jkhl 移动时光标周围保留8行
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
@@ -81,3 +82,10 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
+
+--disable netrw at the very start 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+--set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
